@@ -45,7 +45,7 @@ namespace ConsoleApp1
                 fs.Read(bytes, 0, fslength);
                 fs.Close();
                 string neededtext = Encoding.UTF8.GetString(bytes);
-                LaundryShop mylaundry = LaundryShop.FromFile(neededtext);
+                LaundryShop mylaundry = new LaundryShop.FromFile(neededtext);
             }
 
                 Console.ReadKey();
